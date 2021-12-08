@@ -5,3 +5,14 @@
   display: flex;
   justify-content: space-between;
 }
+body {
+  background-image: url("https://media3.giphy.com/media/g04lCCTUHSw03W7pqD/200.gif");
+  color: white;
+}
+.gif{
+  border: solid white 5px;
+  box-shadow: 14px 8px #999999;
+}
+h1{
+  font-size:50px;
+}
