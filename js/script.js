@@ -9,7 +9,7 @@ $(".play").click(function(){
     $(".result").text("Tie!")
   }else if ((userInput.toLowerCase() === 'rock' && compChoiceWord==='paper') || (userInput.toLowerCase === 'paper' && compChoiceWord==='scissors') || (userInput.toLowerCase === 'scissors' && compChoiceWord==='rock')) {
     $(".result").text("Computer Wins!")
-  } else if ((userInput.toLowerCase !== 'rock')||(userInput.toLowerCase !=='paper')||(userInput.toLowerCase !== 'scissors')){
+  } else if ((userInput !== 'rock')||(userInput !=='paper')||(userInput !== 'scissors')){
     $(".result").text("Please enter a valid choice")
   }
 });
