@@ -4,13 +4,13 @@ $(".play").click(function(){
   
   let compChoiceWord = getCompChoice();
   if ((userInput.toLowerCase() === 'rock' && compChoiceWord === 'scissors') || (userInput.toLowerCase() === 'paper' && compChoiceWord==='rock') ||  (userInput.toLowerCase() === 'scissors' && compChoiceWord==='paper')){
-    $(".result").text("You Win");
+    $(".result").text(`You Win!`)
   }else if ((userInput.toLowerCase() === 'rock' && compChoiceWord==='rock') || (userInput.toLowerCase === 'paper' && compChoiceWord==='paper') || (userInput.toLowerCase === 'scissors' && compChoiceWord==='scissors')) {
-    $(".result").text("Tie!")
+   $(".result").text(`Tie!`)
   }else if ((userInput.toLowerCase() === 'rock' && compChoiceWord==='paper') || (userInput.toLowerCase === 'paper' && compChoiceWord==='scissors') || (userInput.toLowerCase === 'scissors' && compChoiceWord==='rock')) {
-    $(".result").text("Computer Wins!")
+    $(".result").text(`Computer Wins!`)
   } else if ((userInput !== 'rock')||(userInput !=='paper')||(userInput !== 'scissors')){
-    $(".result").text("Please enter a valid choice")
+    $(".result").text(`Please enter a valid choice`)
   }
 });
 
